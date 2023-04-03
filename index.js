@@ -43,7 +43,26 @@
 
  let http=require("http")
  let server= http.createServer((req,res)=>{
-    console.log(req)
+   if(req.url==="/home"){
+    res.setHeader("Content-Type","text/html")
+    res.write("<p>Welcome home</p>")
+    res.end()
+   }else if(req.url==="/about"){
+    res.setHeader("Content-Type","text/html")
+    res.write("<p>Welcome to About Us</p>")
+    res.end()
+   }else if(req.url==="/node"){
+    res.setHeader("Content-Type","text/html")
+    res.write("<p>Welcome to my Node js project</p>")
+    res.end()
+
+   }else{
+    res.setHeader("Content-Type","text/html")
+    res.write("<p>404 not found try typing /home or /node or/about</p>")
+    res.end()
+   }
     
  })
- server.listen(3000)
+ server.listen(3000,()=>{
+   console.log("i love you 3000  -tony stark")
+ })
