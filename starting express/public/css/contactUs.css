@@ -1,0 +1,58 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.mainHeader__nav{
+    width:100vw;
+    background-color: black;
+    height:50px;
+    
+}
+.mainHeader__listItems{
+display: flex;
+align-items: center;
+height:100%;
+
+}
+.mainHeader__item{
+    margin:10px;
+    font-size: 20px;
+    
+}
+.mainHeader__item a{
+    text-decoration: none;
+    color:white;
+}
+.mainTag__heading{
+    font-size: 30px;
+    text-align: center;
+}
+.contactFormDiv{
+width:70%;
+margin:auto; 
+}
+.contactForm{
+    height:170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+    background-color: rgba(255, 166, 0, 0.61);
+    
+}
+.input{
+    width:80%;
+
+    padding:2px;
+
+}
+.label{
+    font-size: 19px;
+}
+button{
+    width:70px;
+    margin:5px;
+}

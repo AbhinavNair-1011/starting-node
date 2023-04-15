@@ -1,0 +1,30 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.mainHeader__nav{
+    width:100vw;
+    background-color: black;
+    height:50px;
+    
+}
+.mainHeader__listItems{
+display: flex;
+align-items: center;
+height:100%;
+
+}
+.mainHeader__item{
+    margin:10px;
+    font-size: 20px;
+    
+}
+.mainHeader__item a{
+    text-decoration: none;
+    color:white;
+}
+.mainTag__heading{
+    text-align: center;
+}
