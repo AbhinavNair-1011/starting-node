@@ -4,17 +4,17 @@ const express=require("express");
 const app=express();
 const server=http.createServer(app);
 
+const adminRouter= require("./routes/admin");
+const shopRouter= require("./routes/shop");
+
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.use("/add-products",(req,res,next)=>{
- res.send(`<form action="/product" method="POST"> <input name="title" type="text" ><input type="submit" value="submit"> </form>`)
-})
- app.post("/product", (req,res,next)=>{
-    console.log(req.body);
-    res.redirect("/")
- })
- app.use("/",(req,res,next)=>{
-    res.send("hello express")
+ 
+app.use("/admin",adminRouter);
+app.use(shopRouter);
+
+ app.use((req,res,next)=>{
+    res.status(404).send("404 page not found")
  })
 
 
