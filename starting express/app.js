@@ -10,12 +10,11 @@ const shopRouter= require("./routes/shop");
 const contactUs= require("./routes/contactUs")
 
 app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname,"public")));
 
 app.use(shopRouter);
 app.use("/admin",adminRouter);
-
-
 app.use(contactUs)
 
 
