@@ -5,7 +5,7 @@ const controller=require("../controllers/admin")
 
 router.get("/add-products",controller.addProducts)
 
-router.post("/product", controller.product);
+router.post("/add-products", controller.product);
 
     module.exports=router;
 
