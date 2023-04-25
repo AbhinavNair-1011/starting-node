@@ -4,7 +4,7 @@ const express=require("express");
 const app=express();
 const server=http.createServer(app);
 const path=require("path")
-const db=require("./database/database")
+const sequelize=require("./database/database")
 
 const adminRouter= require("./routes/admin");
 const shopRouter= require("./routes/shop");
@@ -25,8 +25,10 @@ app.use(errorPage)
 
 
 
-
-
-server.listen(3000,()=>{
-console.log("server started");
+sequelize.sync().then((result)=>{
+    server.listen(3000,()=>{
+        console.log("server started");
+        })
 })
+.catch(err=>console.log(err))
+

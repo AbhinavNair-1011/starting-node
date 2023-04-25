@@ -1,23 +1,18 @@
-const db=require("../database/database")
+const Sequelize= require("sequelize");
 
-class product{
-  
-    constructor(title){
-        this.title=title;
-        
-    }
-    insertIntoDatabase(){
-        return db.execute(`INSERT INTO products (\`product name\`) VALUES ('${this.title}')`)
-       
-       
-     }
-   static fetchAll(){
-    return db.execute(`SELECT * FROM products`)
-    
-   }
-   static deleteAll(){
-    db.execute(`TRUNCATE products`)
-   }
+const sequelize=require("../database/database")
+
+const products=sequelize.define("products",{
+id:{
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    autoIncrement:true,
+    primaryKey:true
+},
+title: {
+    type:Sequelize.STRING,
+    allowNull:false
 }
+})
 
-module.exports=product;
+module.exports=products;
