@@ -11,7 +11,6 @@ const shopRouter= require("./routes/shop");
 const contactUs= require("./routes/contactUs")
 const errorPage=require("./routes/errorPage")
 
-db.execute("SELECT * FROM products")
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json())
