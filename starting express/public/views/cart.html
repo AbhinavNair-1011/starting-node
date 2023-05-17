@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shop</title>
+   <link rel="stylesheet" href="/css/cart.css">
+   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+</head>
+<body>
+   <header class="mainHeader">
+       <nav class="mainHeader__nav">
+           <ul class="mainHeader__listItems">
+               <li class="mainHeader__item " id="shop"><a href="/views/shop.html">Shop</a></li>
+           <li class="mainHeader__item " id="addProduct"><a href="/views/add-products.html">Add Products</a></li>
+           <li class="mainHeader__item " id="contactUs"><a href="/views/contactUs.html">Contact Us</a></li>
+
+           </ul>
+           <ul class="mainHeader__listItems2">
+               <li class="mainHeader__item " id="cart"><a href="/views/cart.html">Cart</a></li>
+               <li class="mainHeader__item " id="logout"><a href="/views/index.html">Logout</a></li>
+           </ul>
+       </nav>
+      </header>
+      <main class="mainTag">
+      <div class="cart">
+        <ul id="cartList">
+            <li id="productName">Product In Cart</li>
+        </ul>
+
+      </div>
+      </main>
+
+      <script src="../js/cart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>

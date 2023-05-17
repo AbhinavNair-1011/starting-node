@@ -1,7 +1,15 @@
 
-const path=require("path")
+const {products,Products}=require("../models/product");
 
+module.exports.homePage=(req,res,next)=>{
+   Products.fetchAll()
+   .then(result=>{
 
-exports.homePage=(req,res,next)=>{
-    res.sendFile(path.join(__dirname,"..","views","shop.html"))
+    res.json({
+        status:"successfull",
+        data:result
+    })
+   })
+   .catch(err=>console.log(err))
+    
  }

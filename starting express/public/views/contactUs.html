@@ -11,16 +11,20 @@
    <header class="mainHeader">
     <nav class="mainHeader__nav">
         <ul class="mainHeader__listItems">
-            <li class="mainHeader__item"><a href="/">Shop</a></li>
-            <li class="mainHeader__item"><a href="/admin/add-products">Add Products</a></li>
-            <li class="mainHeader__item"><a href="/contactUs">Contact Us</a></li>
+            <li class="mainHeader__item " id="shop"><a href="/views/shop.html">Shop</a></li>
+            <li class="mainHeader__item " id="addProduct"><a href="/views/add-products.html">Add Products</a></li>
+            <li class="mainHeader__item " id="contactUs"><a href="/views/contactUs.html">Contact Us</a></li>
+        </ul>
+        <ul class="mainHeader__listItems2">
+            <li class="mainHeader__item " id="cart"><a href="/views/cart.html">Cart</a></li>
+            <li class="mainHeader__item " id="logout"><a href="/views/index.html">Logout</a></li>
         </ul>
     </nav>
    </header>
    <main class="mainTag">
      <h1 class="mainTag__heading">Please fill ur details and we will contact you shortly</h1>
      <div class="contactFormDiv">
-        <form action="/contactUs" class="contactForm" method="post">
+        <form action="/" class="contactForm" method="post">
             <label for="name" class="label">Name:</label>
             <input type="text" name="name" id="name" class="input" >
             <label for="email" class="label">email:</label>
@@ -30,11 +34,6 @@
         </form>
      </div>
    </main>
-   <script>
-    let form=document.querySelector("form") 
-    form.addEventListener("submit",(e)=>{
-        alert("Submitted Succesfully")
-    })
-   </script>
+  <script src="../js/contactUsDom.js"></script>
 </body> 
 </html>

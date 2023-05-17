@@ -1,0 +1,80 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+body{
+    
+    background-color: rgba(15, 173, 173, 0.185);
+    position: relative;
+}
+
+ul{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:70px;
+}
+li{
+    
+    
+    font-size: 30px;
+   
+    
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+input{
+    background-color: rgb(173, 173, 15);
+    height:30px;
+    color:white
+}
+label{
+    font-size:20px;
+    text-align: center;
+    margin:2px;
+}
+button{
+    height:25px;
+    margin:15px 0 0 0 ;
+    font-size:19px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color:red;
+}
+#registerForm{
+    background-color: gray;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    height:300px;
+    position:absolute;
+    /* top: 50%;
+  left: 50%; */
+    transform: translate(35%, 50%);
+
+    z-index: 1;
+    
+}
+#loginForm{
+    background-color: gray;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    height:300px;
+    position: absolute;
+   
+    /* top: 50%; */
+  /* left: 50%; */
+    z-index:0;
+    transform: translate(35%, 50%);
+
+  
+
+}

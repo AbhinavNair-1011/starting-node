@@ -8,10 +8,12 @@ body{
 }
 
 .mainHeader__nav{
-    width:100vw;
-    background-color: black;
-    height:50px;
     
+    background-color: black;
+    height:70px;
+    display:flex;
+    justify-content: space-between;
+
 }
 .mainHeader__listItems{
 display: flex;
@@ -19,20 +21,30 @@ align-items: center;
 height:100%;
 
 }
+.mainHeader__listItems2{
+    display: flex;
+    align-items: center;
+    height:100%;
+    
+    }
 .mainHeader__item{
-    margin:10px;
-    font-size: 20px;
+    margin:15px;
+    font-size: 23px;
     
 }
+
+
 .mainHeader__item a{
     text-decoration: none;
-    color:white;
+    color:rgb(169, 255, 21);
 }
+
 form{
     width:70%;
-    height:200px;
-    background-color: rgba(18, 18, 19, 0.541);
+    /* height:200px; */
+    /* background-color: rgba(18, 18, 19, 0.541); */
     margin:auto; 
+    margin-top:30px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -40,15 +52,22 @@ form{
 
 }
 label{
-    color:white;
+    background-color: black;
+    color: white;
     margin:10px;
 }
 .form__input{
 width:300px;
+height:30px;
 margin:10px;
+background-color: black;
+color: white;
 }
 .form__submit{
-width:70px;
+width:90px;
+height:30px;
 margin:10px;
+background-color: black;
+color: white;
 
 }
